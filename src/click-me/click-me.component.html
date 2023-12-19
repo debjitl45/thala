@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body ng-app="myApp" ng-controller="userCtrl">
+<div class="w3-container">
+    <label for="thalaInput">Enter Value:</label>
+    <input class="w3-input w3-border" id="thalaInput" [(ngModel)]="clickMessage" placeholder="Thala-Checker"/>
+    <br>
+    <button class="w3-btn w3-green w3-ripple" (click)="checkThala()">Check!</button>
+
+    <div>
+        <h3 [ngStyle]=" {'color': isThala ? 'green': 'red'}">{{ result }}</h3>
+    </div>
+</div>
+</body>
