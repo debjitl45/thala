@@ -3,12 +3,21 @@
 <body ng-app="myApp" ng-controller="userCtrl">
 <div class="w3-container">
     <label for="thalaInput">Enter Value:</label>
-    <input class="w3-input w3-border" id="thalaInput" [(ngModel)]="clickMessage" placeholder="Thala-Checker"/>
+    <input class="w3-input w3-border" id="thalaInput" [(ngModel)]="clickMessage" placeholder="D+e+b+j+e+e+t=7"/>
     <br>
     <button class="w3-btn w3-green w3-ripple" (click)="checkThala()">Check!</button>
 
     <div>
         <h3 [ngStyle]=" {'color': isThala ? 'green': 'red'}">{{ result }}</h3>
+    </div>
+    <div *ngIf="isThala" class="thala-result">
+        <video autoplay width="800" height="400" [loop]="true">
+          <source [src]="videoSource" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+    </div>
+    <div *ngIf="isVediya" class="thala-result">
+        <img src="./../assets/vediya.png" type="image/png" width="300" height="300"/>
     </div>
 </div>
 </body>

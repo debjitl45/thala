@@ -8,10 +8,43 @@ button {
   }
   body {
     font-family: Helvetica, Arial, sans-serif;
-  }
+      background: url('./../assets/bg.jpg') no-repeat center; 
+      height: 1200px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
   label {
   font-size: 1.5rem;
   font-weight: bold;
   display: block;
   padding-bottom: 1rem;
+}
+video{
+  display: flex;
+  justify-content: center;
+}
+.thala-result {
+  position: relative;
+}
+
+.thala-result video{
+  position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    animation: fadeIn 5s;
+}
+.thala-result img{
+  position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
