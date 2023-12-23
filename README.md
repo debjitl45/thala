@@ -17,5 +17,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Todo
 <li>Add video for thala and non-thala results [Done]</li>
-<li>Add some easter eggs to feature other cricket celebs [in progress]</li>
+<li>Add some easter eggs to feature other cricket celebs [Done]</li>
 
