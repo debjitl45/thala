@@ -1,15 +1,9 @@
-h3 { font-weight: bold; text-align: center; }
-button {
-    background-color: rgb(255, 255, 255);
-    color: #000;
-    border: 2px solid #cecece;
-    padding: 0.35rem 1rem 0.25rem 1rem;
-    font-size: 1rem;
-  }
+h4 { font-weight: bold; text-align: center; }
+
   body {
     font-family: Helvetica, Arial, sans-serif;
       background: url('./../assets/bg.jpg') no-repeat center; 
-      height: 1200px;
+      height: 900px;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -25,19 +19,33 @@ video{
   display: flex;
   justify-content: center;
 }
-.thala-result {
+#thala-result {
   position: relative;
 }
 
-.thala-result video{
+#thala-result video{
   position: absolute;
+  padding-right: 5px;
+  padding-left: 5px;
     top: 20%;
     left: 50%;
+    object-fit: fill;
+    height: 70%;
     transform: translate(-50%, 10%);
     animation: fadeIn 5s;
 }
-.thala-result img{
+#thala-result img{
   position: absolute;
+  padding-right: 10px;
+  padding-left: 10px;
+    top: 15%;
+    left: 50%;
+    object-fit: fill;
+    max-height: 70%;
+    transform: translate(-50%, 10%);
+    animation: fadeIn 5s;
+}
+.card{
     top: 20%;
     left: 50%;
     transform: translate(-50%, 10%);

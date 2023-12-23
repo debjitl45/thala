@@ -9,7 +9,7 @@ h1
 body {
   font-family: Helvetica, Arial, sans-serif;
     background: url('./../assets/bg.jpg') no-repeat center; 
-    height: 1200px;
+    height: 900px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
